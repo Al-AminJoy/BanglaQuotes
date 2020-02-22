@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <include
+        android:id="@+id/feedback_toolbar_id"
+        layout="@layout/toolbar_other_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/feedbackMarginStart"
+        android:layout_marginTop="@dimen/feedbackMarginTop"
+        android:layout_marginEnd="@dimen/feedbackMarginEnd"
+        android:text="@string/feedbackmsg"
+        android:textColor="@color/basicColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_toolbar_id" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/feedbackBoxMarginStart"
+        android:layout_marginTop="@dimen/feedbackBoxMarginTop"
+        android:layout_marginEnd="@dimen/feedbackBoxMarginEnd"
+        android:background="@color/basicColor"
+        app:cardCornerRadius="@dimen/feedbackCardRedious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/feedbackBoxPadding">
+
+            <EditText
+                android:id="@+id/feedback_edtxt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:gravity="start"
+                android:lines="10"
+                android:textColor="@color/txtColor"
+                android:textCursorDrawable="@color/basicColor"
+
+                />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/send_feedback_bn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/feedbackMarginStart"
+        android:layout_marginTop="@dimen/feedbackMarginTop"
+        android:layout_marginEnd="@dimen/feedbackMarginEnd"
+        android:background="@color/basicColor"
+        android:text="Sent"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

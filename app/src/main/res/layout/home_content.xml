@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/homelayoutMarginLeft"
+        android:layout_marginRight="@dimen/homelayoutMarginRight"
+        android:layout_marginBottom="@dimen/homelayoutMarginBottom"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/wvHomeFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </WebView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="12dp"
+            android:id="@+id/vpHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homeQuotesAreaSize">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/linLayHomeDotsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/homeDotLayoutMarginLeft"
+            android:layout_marginRight="@dimen/homeDotLayoutMarginRight"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHomeCatagory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/catagoryCardMarginTop" />
+    </LinearLayout>
+</RelativeLayout>

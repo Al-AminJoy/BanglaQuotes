@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCatagoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:layout_marginLeft="@dimen/catagoryCardMarginLeft"
+        android:layout_marginRight="@dimen/catagoryCardMarginRight"
+        android:layout_marginBottom="@dimen/catagoryCardMarginBottom"
+        app:cardCornerRadius="@dimen/catagoryCardRadious">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivCatagoryLayImgId"
+                android:layout_width="@dimen/catagoryIconSize"
+                android:layout_height="@dimen/catagoryIconSize"
+                android:padding="@dimen/catagoryCardImagePadding"
+                android:src="@drawable/rabindranath" />
+
+            <TextView
+                android:id="@+id/tvCatagoryLayNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/basicColor"
+                android:gravity="center"
+                android:lines="2"
+                android:padding="@dimen/catagory_name_padding"
+                android:text="Robindranath Tagore"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/catagoryTextSize" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

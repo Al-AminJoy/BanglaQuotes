@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/basicColor"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rlHomeToolbarItemId"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/otherToolbarPadding"
+        android:visibility="visible"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivQuotesToolbarBackIconId"
+            android:layout_width="@dimen/backIconSize"
+            android:layout_height="@dimen/backIconSize"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_double_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvQuotesToolbarTitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Robindra Nath Tagore"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/ToolbarTitleTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivQuotesToolbarBackIconId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivQuotesToolbarAuthorDetailsIconId"
+            android:layout_width="@dimen/poetDetailsIconSize"
+            android:layout_height="@dimen/poetDetailsIconSize"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_poet_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

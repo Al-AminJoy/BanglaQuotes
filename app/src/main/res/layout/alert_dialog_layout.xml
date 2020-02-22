@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dialogIconSize"
+            android:layout_height="@dimen/dialogIconSize"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_exit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/exitAlertMarginLeft"
+            android:text="@string/exit_alert"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/exitAlertTextSize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/confirming_Dialog_marginTop"
+        android:gravity="center_vertical"
+        android:text="@string/exit_alert_are_you_sure"
+        android:textColor="@color/whiteColor"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tvDialogRateId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:text="@string/rate_us"
+            android:gravity="center"
+            android:textColor="@color/basicLightColor"
+            android:textSize="@dimen/exitdialogTextSize" />
+
+        <TextView
+            android:id="@+id/tvDialogNoId"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dialogNoMarginLeft"
+            android:layout_marginRight="@dimen/dialogNoMarginRight"
+            android:layout_toLeftOf="@id/tvDialogYesId"
+            android:text="@string/no"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/exitdialogTextSize" />
+
+        <TextView
+            android:id="@+id/tvDialogYesId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="@string/yes"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/exitdialogTextSize" />
+    </RelativeLayout>
+
+</LinearLayout>

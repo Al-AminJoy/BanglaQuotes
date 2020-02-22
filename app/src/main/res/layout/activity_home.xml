@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeDrawerId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context="com.bangla_bani.bangla_quotes.Activity.HomeActivity"
+    tools:openDrawer="start">
+
+    <include
+        android:id="@+id/tbHomeId"
+        layout="@layout/home_scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/HomeNavId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/drawerBackground"
+        app:itemIconTint="@color/whiteColor"
+        app:itemTextColor="@color/whiteColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="vertical"
+                android:padding="@dimen/drawer_title_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_logo_size"
+                    android:layout_height="@dimen/drawer_logo_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navDrawerRateId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon_size"
+                    android:layout_height="@dimen/drawer_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  প্লে-স্টোরে রেট দিন"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/quotesTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/whiteColor" />
+
+            <LinearLayout
+                android:id="@+id/navDrawerShareId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon_size"
+                    android:layout_height="@dimen/drawer_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_share_drawer" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  অ্যাপটি শেয়ার করুন"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/quotesTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/whiteColor" />
+
+            <LinearLayout
+                android:id="@+id/navDrawerFeedbackId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon_size"
+                    android:layout_height="@dimen/drawer_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_feedback" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  Feedback"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/quotesTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/whiteColor" />
+
+            <LinearLayout
+                android:id="@+id/navDrawerLikeFBId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:padding="1.5dp"
+                    android:layout_width="@dimen/drawer_icon_size"
+                    android:layout_height="@dimen/drawer_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  Like Us Facebook"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/quotesTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/whiteColor" />
+
+            <LinearLayout
+                android:id="@+id/navDrawerPrivacyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon_size"
+                    android:layout_height="@dimen/drawer_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_privacy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  Privacy Policy"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/quotesTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

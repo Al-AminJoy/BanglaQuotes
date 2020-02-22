@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="60dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splashImgHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/splashIconMarginTop"
+        android:layout_marginBottom="@dimen/splashMarginBottom"
+        android:src="@drawable/ic_sp_logo">
+    </ImageView>
+
+    <ProgressBar
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/progressmargin"
+        android:layout_marginRight="@dimen/progressmargin"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/basicColor">
+    </ProgressBar>
+
+</LinearLayout>

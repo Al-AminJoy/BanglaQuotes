@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLeft">24dp</dimen>
+    <dimen name="marginRight">24dp</dimen>
+
+    <dimen name="quotesCatagoryPadding">12dp</dimen>
+    <dimen name="catagoryIconSize">100dp</dimen>
+    <dimen name="catagoryNameMarginLeft">5dp</dimen>
+    <dimen name="catagoryTextSize">15sp</dimen>
+    <dimen name="catagoryArrowIcon">18dp</dimen>
+    <dimen name="catagoryCardElevation">3dp</dimen>
+    <dimen name="catagoryCardRadious">10dp</dimen>
+
+    <dimen name="catagoryCardMarginLeft">12dp</dimen>
+    <dimen name="catagoryCardMarginRight">12dp</dimen>
+    <dimen name="catagoryCardMarginTop">10dp</dimen>
+    <dimen name="catagoryCardImagePadding">5dp</dimen>
+    <dimen name="messageTextPadding">10dp</dimen>
+
+    <dimen name="quotesTextSize">16sp</dimen>
+    <dimen name="drawerTitleTextSize">20sp</dimen>
+
+    <dimen name="homeQuotesAreaSize">270dp</dimen>
+
+    <dimen name="quotesViewHeight">1.5dp</dimen>
+    <dimen name="quotesViewMarginRight">24dp</dimen>
+    <dimen name="quotesViewMarginLeft">24dp</dimen>
+    <dimen name="quotesViewMarginTop">5dp</dimen>
+    <dimen name="quotesViewMarginBottom">5dp</dimen>
+
+    <dimen name="quotesBottomMarginLeft">24dp</dimen>
+    <dimen name="quotesBottomMarginRight">24dp</dimen>
+    <dimen name="quotesBottomMarginTop">10dp</dimen>
+    <dimen name="quotesBottomMarginBottom">10dp</dimen>
+    <dimen name="quotesBottomHeight">30dp</dimen>
+
+    <dimen name="quotesIconHeight">18dp</dimen>
+    <dimen name="quotesIconWidth">18dp</dimen>
+
+    <dimen name="quotesIconTextMarginLeft">5dp</dimen>
+    <dimen name="quotesIconTextMarginRight">5dp</dimen>
+    <dimen name="quotesIconTextMarginTop">5dp</dimen>
+    <dimen name="quotesIconTextMarginBottom">5dp</dimen>
+
+    <dimen name="quotesTextPadding">24dp</dimen>
+    <dimen name="quotesBottomPartPadding">10dp</dimen>
+
+    <dimen name="drawer_icon_size">24dp</dimen>
+    <dimen name="drawer_title_padding">10dp</dimen>
+    <dimen name="drawer_logo_size">90dp</dimen>
+
+</resources>

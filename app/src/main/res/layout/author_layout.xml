@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tbAuthor"
+        layout="@layout/toolbar_other_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/avBannerAuthorId"
+        android:layout_below="@id/tbAuthor"
+        android:layout_marginBottom="@dimen/authorDetailsMarginBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAuthorAuthorImgId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/author_Image_height"
+                android:layout_marginLeft="@dimen/author_image_margin_left"
+                android:layout_marginTop="@dimen/author_image_margin_top"
+                android:layout_marginRight="@dimen/author_image_margin_right"
+                android:src="@drawable/rabindranath" />
+
+            <TextView
+                android:id="@+id/tvAuthorNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/author_text_margin_left"
+                android:layout_marginTop="@dimen/author_text_margin_top"
+                android:layout_marginRight="@dimen/author_text_margin_right"
+                android:gravity="center"
+                android:text="@string/author_name"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/author_name_text_size"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/author_name_view_margin_left"
+                android:layout_marginTop="@dimen/author_name_view_margin_top"
+                android:layout_marginRight="@dimen/author_name_view_margin_right"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tvAuthorDetailsId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/author_details_margin_left"
+                android:layout_marginTop="@dimen/author_details_margin_top"
+                android:layout_marginRight="@dimen/author_details_margin_right"
+                android:layout_marginBottom="@dimen/author_details_margin_bottom"
+                android:text="@string/author_details"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/quotesTextSize" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avBannerAuthorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_id"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

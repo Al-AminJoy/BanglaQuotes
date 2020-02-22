@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/qrimg"
+        android:layout_width="@dimen/shareIconSizeInQR"
+        android:layout_height="@dimen/shareIconSizeInQR"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/shareButtonMargin"
+        android:src="@drawable/ic_share"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrimg"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/shareButtonMargin"
+        android:background="@color/basicColor"
+        android:padding="@dimen/shareButtonPadding"
+        android:text="@string/shareButtonText"
+        android:textColor="@color/whiteColor" />
+</RelativeLayout>

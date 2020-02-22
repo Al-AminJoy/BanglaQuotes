@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/logo_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="coloredbutton"
+        parent="Widget.AppCompat.Button.Colored">
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/basicColor</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#ffffff</item>
+    </style>
+</resources>

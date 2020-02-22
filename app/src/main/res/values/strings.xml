@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Bangla Quotes</string>
+    <string name="love">LOVE</string>
+    <string name="search_catagory">Search Catagory</string>
+    <string name="sample_quotes">স্বপ্নময়  রজনী  ভালোবাসার  ভরপুর  সৃজনী ,ঊষার  উঁকিঝুঁকি  ঘুমভাঙা  চোখে  আঁকিবুকি ,প্রভাতের  উষ্ণ  আলোড়ন  তোমার  বিচরণ ,মনপ্রাণ  চঞ্চল  আমার  হৃদয়  দুর্বল। পাশ ফিরে ভাবি</string>
+    <string name="no_fav_msg">List Is Empty</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="feedbackmsg">Send Your Valuable Feedback</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="author_name">Robindranath Tagore</string>
+    <string name="author_details">\"স্কুল থেকে এসএসসি (১৯৭৪), "</string>
+
+    <string-array name="catagoryList">
+        <item>নির্মলেন্দু গুণ</item>
+        <item>রুদ্র মুহম্মদ শহীদুল্লাহ </item>
+        <item>লালন শাহ</item>
+        <item>সুফিয়া কামাল</item>
+        <item>সক্রেটিস</item>
+        <item>অ্যালবার্ট আইনস্টাইন</item>
+        <item>এরিস্টটল</item>
+        <item>ডেল ক্যার্নেগি</item>
+        <item>আডলফ হিটলার</item>
+        <item>উইলিয়াম শেক্সপিয়র</item>
+        <item>নেলসন ম্যান্ডেলা</item>
+        <item>মাদার তেরেসা</item>
+        <item>লুৎফর রহমান</item>
+        <item>রেদোয়ান মাসুদ</item>
+    </string-array>
+
+    <string name="NIRMOLENDU_GOON">NIRMOLENDU_GOON</string>
+    <string name="RUDRA_MOHAMMAD_SHAHIDULLAH">RUDRA_MOHAMMAD_SHAHIDULLAH</string>
+    <string name="LALON">LALON</string>
+    <string name="SUFIA_KAMAL">SUFIA_KAMAL</string>
+    <string name="SOCRATES">SOCRATES</string>
+    <string name="ALBERT_EINSTEIN">ALBERT_EINSTEIN</string>
+    <string name="ARISTOTLE">ARISTOTLE</string>
+    <string name="DALE_CARNEGIE">DALE_CARNEGIE</string>
+    <string name="ADOLF_HITLER">ADOLF_HITLER</string>
+    <string name="WILLIAM_SHAKESPEARE">WILLIAM_SHAKESPEARE</string>
+    <string name="NELSON_MANDELA">NELSON_MANDELA</string>
+    <string name="MOTHER_TERESA">MOTHER_TERESA</string>
+    <string name="LUTFOR_RAHMAN">LUTFOR_RAHMAN</string>
+    <string name="REDWAN_MASUD">REDWAN_MASUD</string>
+    <string name="full_app_name">Quotes App</string>
+
+    <!--AdMob Ads IDs-->
+    <string name="admob_ad_id">ca-app-pub-4364453159749180~2379797660</string>
+    <string name="industrial_ad_id">ca-app-pub-4364453159749180/7141169759</string>
+    <string name="banner_ad_id">ca-app-pub-4364453159749180/2603707681</string>
+    <string name="favourite">Favourite</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="exit_alert">Exit !</string>
+    <string name="exit_alert_are_you_sure">Are You Sure ?</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="shareButtonText">অন্যান্য অ্যাপ্লিকেশনের মাধ্যমে শেয়ার করুন</string>
+
+
+</resources>

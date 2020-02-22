@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/basicColor"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHomeToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:cardElevation="@dimen/homeToolbarCardElevation"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/homeToolbarSearchPadding">
+
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/ivHomeToolbarBackIconId"
+                android:layout_width="@dimen/homeToolbarBackIconSize"
+                android:layout_height="@dimen/homeToolbarBackIconSize"
+                android:layout_marginLeft="24dp"
+                android:src="@drawable/ic_back" />
+
+            <EditText
+                android:id="@+id/etHomeToolbarSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/homeToolbarSearchFieldMarginLeft"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/whiteColor"
+                android:gravity="center"
+                android:hint="@string/search_catagory"
+                android:textColor="@color/blackColor"
+                android:textCursorDrawable="@color/basicColor"
+                android:textSize="@dimen/quotesTextSize"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rlHomeToolbarItemId"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/homeToolbarTotalPadding"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivHomeToolbarMenuIconId"
+            android:layout_width="@dimen/homeToolbarMenuIconSize"
+            android:layout_height="@dimen/homeToolbarMenuIconSize"
+            android:layout_marginLeft="@dimen/homeToolbarMenuIconMarginLeft"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/tvHomeTitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ivHomeToolbarMenuIconId"
+            android:text="বাংলা অনুপ্রেরণামূলক বানী"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/ToolbarTitleTextSize" />
+
+        <ImageView
+            android:id="@+id/ivHomeToolbarFavIconId"
+            android:layout_width="@dimen/homeToolbarFavIconSize"
+            android:layout_height="@dimen/homeToolbarFavIconSize"
+            android:layout_marginRight="@dimen/homeToolbarFavIconMarginRight"
+            android:layout_toLeftOf="@id/ivHomeSearchIconId"
+            android:src="@drawable/ic_fav" />
+
+        <ImageView
+            android:id="@+id/ivHomeSearchIconId"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/homeToolbarSearchIconMarginRight"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+</RelativeLayout>

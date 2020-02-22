@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4ECCA3</color>
+    <color name="colorPrimaryDark">#393E46</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Quotes APP -->
+    <color name="basicColor">#232931</color>
+    <color name="basicLightColor">#393E46</color>
+    <color name="txtColor">#000</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="backgroundColor">#EEEEEE</color>
+    <color name="redColor">#F00808</color>
+    <color name="drawerBackground">#4ECCA3</color>
+    <color name="favColor">#4ECCA3</color>
+
+    <color name="txtColorCatagory">#4e4385</color>
+    <color name="blackColor">#000</color>
+</resources>
